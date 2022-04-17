@@ -1,0 +1,131 @@
+<html>
+<head>
+<style>
+.Full {
+	width: 100%;
+	height: 100%;
+}
+.LogoRadio {
+	font-family: arial;
+	font-size: 86px;
+	color: #FFFFFF;
+	font-style: bold;
+}
+.Espaco15 {
+	padding: 15px;
+}
+.FundoRadio {
+	background-color: #FFC600;
+}
+.Alinhamento {
+	text-align: center;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6596W4');</script>
+    <!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1NHK3VVBFM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+</head>
+<body style="background-color: #FFC600;">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6596W4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	<script src="//code.jivosite.com/widget/c9ltILG8jZ" async></script>
+
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49744202-1', 'auto');
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Radio',
+            eventAction: 'open',
+            eventLabel: 'PazVerdade'
+        });
+	</script> 
+
+	<div class="Full FundoRadio Alinhamento" >
+        <div style="position: relative; width:800px; margin: auto; padding-top: 60px; padding-bottom: -60px;">
+            <span style="color:#000000; font-size:220px; font-family: arial;"><b>DEUS</b></font>
+        </div>
+        <div style="position: relative; width:800px; margin: auto;  padding-top: -60px; ">
+            <span style="color:#000000; font-size:50px; font-family: arial;"><b>vai mudar a sua hist&oacute;ria!</b></font>
+        </div>
+        <div style="position: relative; width:800px; margin: auto;  padding-top: -60px; ">
+            <span style="color:#000000; font-size:80px; font-family: arial;"><br><b>Click para ouvir</b></font>
+        </div>        
+        <div style="position: relative; margin: auto; width:397px; margin-top: 60px">
+            <div style="position: relative; width:800px; margin: auto; height: 300px;">
+                <div id="buttonPlay" style="position: absolute; left: 0; top: 0; z-index: 1;"><img src="button.png" width="300px" onclick="gtag('play', 'G-1NHK3VVBFM');document.getElementById('audio_1').play(); $('#buttonPlay').attr('style', 'position: absolute; left: 0; top: 0; z-index: 0;'); $('#buttonStop').attr('style', 'position: absolute; left: 0; top: 0; z-index: 1;');"/></div>
+                <div id="buttonStop" style="position: absolute; left: 0; top: 0; z-index: 0;"><img src="buttonStop.png" width="300px" onclick="document.getElementById('audio_1').pause(); $('#buttonPlay').attr('style', 'position: absolute; left: 0; top: 0; z-index: 1;'); $('#buttonStop').attr('style', 'position: absolute; left: 0; top: 0; z-index: 0;');"/></div>
+            </div>
+            <audio
+                hidden="true"
+                id="audio_1"
+                controls="false"
+                preload="none"
+                style="width:26em; padding:0;">
+                <source
+                    height="40px"
+                    src="http://fo-01.ddns.net:8000/?type=http&amp;nocache=8"
+                    type="audio/mpeg"
+                    autoplay='true'/>
+            </audio>
+        </div>
+        <div style="position: relative; margin-top: 60px"><img src="LogoRadio.jpg"></div>
+        <div style="position: relative; width:800px; margin: auto; padding-top: 60px;">
+            <span style="color:#000000; font-size:40px; font-family: arial;"><b>Culto todos os dias &agrave;s 20:00.</b></font>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+   
+    <script type="text/javascript">
+        var registerOnWindowLoad=function(callback){
+            if (window.addEventListener){
+                window.addEventListener('load',callback,false);
+            } else {
+                window.attachEvent('onload',callback);
+            }
+        };
+
+        registerOnWindowLoad(function(){
+
+            var audio=document.getElementsByTagName("audio");
+            if(audio.length){
+                var canPlay = !!audio[0].canPlayType && audio[0].canPlayType('audio/mpeg; codecs="mp3"') != "";
+                if(!canPlay){
+                    for(var i=audio.length-1;i>=0;i--){
+                        var parent = audio[i].parentNode;
+                        parent.removeChild(audio[i]);
+                        var parent2 = parent.parentNode;
+                        parent2.removeChild(parent);
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
